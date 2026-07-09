@@ -35,15 +35,9 @@ Struktur:
 │   ├── deka-insight.html
 │   └── coursework-thesis.html
 └── assets/
-    ├── klhs/     (7 gambar)
-    ├── unfpa/    (8 gambar)
-    ├── drone/    (4 gambar)
-    ├── deka/     (kosong — untuk cuplikan Anda)
-    └── akademik/ (kosong — untuk gambar Anda)
+    ├── klhs/
+    ├── unfpa/
+    ├── drone/
+    ├── deka/
+    └── akademik/
 ```
-
-Narasi tiap halaman sudah disesuaikan dengan peran sebenarnya:
-- UNFPA Garut — dikerjakan penuh (data, analisis, peta, laporan).
-- KLHS Teluk Pandan — pemeriksaan data, pengisian matriks KRP, dan narasi (peta oleh tim).
-- Drone — diproses sendiri (RTK/PPK/GCP).
-- Deka Insight — pemeriksaan isian kuesioner survei (bukan validasi peta).
