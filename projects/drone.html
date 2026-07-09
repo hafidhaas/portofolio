@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pemetaan Drone &amp; Fotogrametri — Hafidha Aulia Setyanida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .hero{padding:70px 0 26px}
+  .hero .plate-no{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--muted);letter-spacing:.12em;margin-bottom:20px}
+  .hero h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(2.2rem,5.4vw,4rem);line-height:1.04;letter-spacing:-.01em;max-width:18ch;margin-top:16px}
+  .hero h1 em{font-style:italic;color:var(--teal)}
+  .hero .sub{margin-top:24px;max-width:60ch;font-size:1.05rem;color:#38423f}
+  .hero .meta{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px 12px}
+  .cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-top:8px}
+  @media(max-width:680px){.cmp{grid-template-columns:1fr}}
+  .cmp .col{background:var(--paper);padding:20px 18px}
+  .cmp .col h4{font-family:'Fraunces',serif;font-weight:500;font-size:1.15rem}
+  .cmp .col .tot{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--clay);margin-top:4px}
+  .cmp .col ul{list-style:none;margin-top:12px;font-size:.86rem;color:#3c443f}
+  .cmp .col li{padding:5px 0;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
+  .cmp .col li span{color:var(--muted)}
+  .method-title{font-family:'Fraunces',serif;font-weight:500;font-size:1.3rem;color:var(--teal-deep)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="../index.html">Hafidha A. S. <span>/</span> Portofolio</a>
+    <nav>
+      <a href="../index.html">← Semua Portofolio</a>
+      <a href="#hasil" class="hide-sm">Hasil</a>
+      <a href="#akurasi" class="hide-sm">Akurasi</a>
+      <a href="#peran">Kontribusi</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="plate-no">DJI M3E · WGS 84 / UTM 48S · 24 AGUSTUS 2024</div>
+    <div class="eyebrow">Portofolio · Fotogrametri</div>
+    <h1>Dari citra udara ke <em>ortofoto</em> dan model elevasi</h1>
+    <p class="sub">
+      Pengolahan foto udara drone menjadi ortofoto beresolusi tinggi dan Digital
+      Elevation Model menggunakan Agisoft Metashape, membandingkan tiga alur koreksi
+      posisi: RTK, PPK, dan GCP.
+    </p>
+    <div class="meta">
+      <span class="tag">Agisoft Metashape</span>
+      <span class="tag">RTK · PPK · GCP</span>
+      <span class="tag">Ortofoto</span>
+      <span class="tag">DEM</span>
+      <span class="tag">Remote Pilot (RPC)</span>
+    </div>
+
+    <div class="reveal" style="margin-top:40px">
+
+      <!-- RTK -->
+      <h3 class="method-title" style="margin:0 0 12px">RTK</h3>
+      <div class="ph-grid g2">
+        <img src="../assets/drone/sumber-gambar/rtk_ortho.png" alt="Ortofoto RTK" onclick="zoom(this.src)" style="width:100%;border-radius:4px;cursor:zoom-in;">
+        <img src="../assets/drone/sumber-gambar/rtk_dem.png" alt="DEM RTK" onclick="zoom(this.src)" style="width:100%;border-radius:4px;cursor:zoom-in;">
+      </div>
+
+      <!-- PPK -->
+      <h3 class="method-title" style="margin:32px 0 12px">PPK</h3>
+      <div class="ph-grid g2">
+        <img src="../assets/drone/sumber-gambar/ppk_ortho.png" alt="Ortofoto PPK" onclick="zoom(this.src)" style="width:100%;border-radius:4px;cursor:zoom-in;">
+        <img src="../assets/drone/sumber-gambar/ppk_dem.png" alt="DEM PPK" onclick="zoom(this.src)" style="width:100%;border-radius:4px;cursor:zoom-in;">
+      </div>
+
+      <!-- GCP -->
+      <h3 class="method-title" style="margin:32px 0 12px">GCP</h3>
+      <div class="ph-grid g2">
+        <img src="../assets/drone/sumber-gambar/gcp_ortho.png" alt="Ortofoto GCP" onclick="zoom(this.src)" style="width:100%;border-radius:4px;cursor:zoom-in;">
+        <img src="../assets/drone/sumber-gambar/gcp_dem.png" alt="DEM GCP" onclick="zoom(this.src)" style="width:100%;border-radius:4px;cursor:zoom-in;">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- COMPARISON -->
+<section id="hasil">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:12px">Tiga Alur Kerja</div>
+        <h2>RTK · PPK · GCP</h2>
+      </div>
+      <span class="n">§ 01</span>
+    </div>
+    <p class="lead" style="margin-bottom:24px">
+      Area yang sama diproses dengan tiga metode koreksi posisi berbeda untuk
+      membandingkan jumlah foto, tie points, dan akurasi akhir. Semua diproses pada
+      perangkat yang sama dengan parameter setara.
+    </p>
+    <div class="cmp reveal">
+      <div class="col">
+        <h4>RTK</h4>
+        <div class="tot">Real-Time Kinematic</div>
+        <ul>
+          <li>Jumlah foto <span>72</span></li>
+          <li>Tie points <span>18.286</span></li>
+          <li>GSD <span>2,72 cm/pix</span></li>
+          <li>Reproj. error <span>1,02 pix</span></li>
+          <li>Error XY <span>7,5 cm</span></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>PPK</h4>
+        <div class="tot">Post-Processed Kinematic</div>
+        <ul>
+          <li>Jumlah foto <span>150</span></li>
+          <li>Tie points <span>18.545</span></li>
+          <li>GSD <span>2,89 cm/pix</span></li>
+          <li>Reproj. error <span>0,99 pix</span></li>
+          <li>Error XY <span>1,62 m</span></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>GCP</h4>
+        <div class="tot">Ground Control Points</div>
+        <ul>
+          <li>Jumlah foto <span>75</span></li>
+          <li>Titik kontrol <span>8</span></li>
+          <li>GSD <span>2,86 cm/pix</span></li>
+          <li>Reproj. error <span>1,07 pix</span></li>
+          <li>RMSE total <span>3,43 cm</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCURACY -->
+<section id="akurasi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:12px">Kontrol Kualitas</div>
+        <h2>Pengujian Akurasi</h2>
+      </div>
+      <span class="n">§ 02</span>
+    </div>
+    <div class="ph-grid g2 reveal">
+      <img src="../assets/drone/sumber-gambar/sebaran_gcp.png" alt="Sebaran error titik kontrol tanah (GCP)" onclick="zoom(this.src)" style="width:100%;border-radius:4px;cursor:zoom-in;">
+      <img src="../assets/drone/sumber-gambar/uji_akurasi.png" alt="Digital Elevation Model alur GCP" onclick="zoom(this.src)" style="width:100%;border-radius:4px;cursor:zoom-in;">
+    </div>
+    <p class="lead" style="margin-top:26px">
+      Alur GCP memberikan akurasi horizontal-vertikal terbaik (RMSE 3,43 cm) karena
+      diikat ke titik kontrol tanah terukur, sementara RTK menawarkan alur kerja
+      tercepat tanpa pemasangan titik kontrol. Perbandingan ini membantu memilih metode
+      sesuai kebutuhan ketelitian dan waktu di lapangan.
+    </p>
+  </div>
+</section>
+
+<!-- ROLE -->
+<section id="peran">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:12px">Kontribusi Saya</div>
+        <h2>Bagian yang saya kerjakan</h2>
+      </div>
+      <span class="n">§ 03</span>
+    </div>
+    <div class="role">
+      <div>
+        <ul>
+          <li>Mengambil foto udara menggunakan drone DJI Matrice 3</li>
+          <li>Mengolah foto udara drone menjadi ortofoto dan DEM di Agisoft Metashape.</li>
+          <li>Menjalankan tiga alur koreksi posisi (RTK, PPK, GCP) dan membandingkan hasilnya.</li>
+          <li>Menandai dan mengukur titik kontrol tanah (GCP) untuk mengikat model ke koordinat lapangan.</li>
+          <li>Memeriksa laporan akurasi (reprojection error, RMSE) sebagai kontrol kualitas.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px">Perangkat &amp; Alat</div>
+        <div class="stack">
+          <span class="tag">Agisoft Metashape 2.1</span><span class="tag">DJI Mavic 3E</span>
+          <span class="tag">RTK / PPK / GCP</span><span class="tag">WGS 84 / UTM 48S</span>
+        </div>
+        <div class="eyebrow" style="margin:26px 0 14px">Sertifikasi</div>
+        <p style="font-size:.96rem;color:#38423f">
+          Remote Pilot Certificate (RPC)<br>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--muted)">Kementerian Perhubungan RI &amp; APDI · berlaku s/d September 2026</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>
+      <h3>Hafidha Aulia Setyanida</h3>
+      <p style="color:var(--muted);margin-top:6px;font-size:.92rem">Perencanaan Wilayah dan Kota · Analisis Spasial &amp; GIS</p>
+      <p style="margin-top:14px;font-size:.92rem"><a href="mailto:hafidhasetyanida@gmail.com">hafidhasetyanida@gmail.com</a></p>
+    </div>
+    <div class="foot-meta">
+      PORTOFOLIO · DRONE &amp; FOTOGRAMETRI<br>
+      AGISOFT METASHAPE · RTK / PPK / GCP<br>
+      DITAMPILKAN UNTUK PORTOFOLIO
+    </div>
+  </div>
+</footer>
+
+<!-- lightbox pop-up -->
+<div id="lb" onclick="closeLb()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;justify-content:center;align-items:center;cursor:zoom-out;opacity:0;transition:opacity .25s ease;">
+  <span style="position:absolute;top:18px;right:26px;font-size:2.4rem;line-height:1;color:#fff;cursor:pointer;font-family:sans-serif;">&times;</span>
+  <img id="lbimg" style="max-width:92%;max-height:92%;border-radius:4px;transform:scale(.92);transition:transform .25s ease;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+</div>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  function zoom(src){
+    var lb=document.getElementById('lb'), img=document.getElementById('lbimg');
+    img.src=src; lb.style.display='flex';
+    requestAnimationFrame(function(){ lb.style.opacity='1'; img.style.transform='scale(1)'; });
+  }
+  function closeLb(){
+    var lb=document.getElementById('lb'), img=document.getElementById('lbimg');
+    lb.style.opacity='0'; img.style.transform='scale(.92)';
+    setTimeout(function(){ lb.style.display='none'; }, 250);
+  }
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeLb(); });
+</script>
+</body>
+</html>
